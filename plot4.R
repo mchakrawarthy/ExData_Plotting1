@@ -29,7 +29,7 @@ png(file="plot4.png",width = 480, height = 480,units = "px")
 par(mfcol = c(2,2))
 
 # Plot DateTime and Global active power
-plot(hpc2$DateTime, hpc2$Global_active_power, type="l", xlab="", ylab="Global Active Power (kilowatts)",col="black")
+plot(hpc2$DateTime, hpc2$Global_active_power, type="l", xlab="", ylab="Global Active Power",col="black")
 
 # Plot DateTime and Sub_metering_1
 plot(hpc2$DateTime,as.numeric(hpc2$Sub_metering_1),type="l",ylab="Energy sub metering",xlab="")
